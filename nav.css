@@ -1,0 +1,84 @@
+
+/*		
+#nav ul {
+	margin: 0;
+	padding: 3px;
+	list-style-type: none;
+	text-align: left;
+	background-color: #C0C0C0;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: left top; 
+        /*box-shadow: 3px 3px 1px #454545; */
+        box-shadow: 0 5px 5px #454545;
+         
+}
+
+#nav ul li {
+display: inline; 
+}
+
+#nav ul li a {
+text-decoration: none; 
+padding: .2em 1em; 
+color: #000; 
+
+
+}
+
+#nav ul li a:hover {
+	/*background-color: #4E5869; */
+	color: #FFF;
+
+} */
+
+
+#nav {
+	margin: 0;
+	padding: 3px;
+	height: 1em; }
+#nav li {
+	list-style: none;
+	float: left; }
+#nav li a {
+	display: block;
+	padding: 3px 8px;
+	background-color: #5e8ce9;
+	color: #fff;
+	text-decoration: none; }
+
+#nav li ul {
+	display: none; 
+	width: 10em; /* Width to help Opera out */
+	background-color: #C0C0C0;
+}
+
+#nav li:hover ul {
+	display: block;
+	position: absolute;
+	margin: 0;
+	padding: 0; }
+#nav li:hover li {
+	float: none; }
+#nav li:hover li a {
+	background-color: #69f;
+	border-bottom: 1px solid #fff;
+	color: #000; }
+#nav li li a:hover {
+	background-color: #8db3ff; }
+
+#nav li:hover ul, #navbar li.hover ul {
+	display: block;
+	position: absolute;
+	margin: 0;
+	padding: 0; }
+#nav li:hover li, #navbar li.hover li {
+	float: none; }
+#nav li:hover li a, #navbar li.hover li a {
+	background-color: #69f;
+	border-bottom: 1px solid #fff;
+	color: #000; }
+
+
+/*http://www.cssnewbie.com/easy-css-dropdown-menus/#.UTlzc1cU_7k*/
+

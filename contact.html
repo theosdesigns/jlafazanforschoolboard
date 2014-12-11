@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+ <link href="http://www.joshlafazan.org/default.css" media="all" rel="stylesheet" type="text/css" />
+ <link href="http://www.joshlafazan.org/navbar.css" media="all" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+            function processform()
+            {
+                //defining and initializing boolean variables for steps and form validation
+                var step1chk = false;
+                var formchk = false;            
+                var namechk = false;
+                var emailchk = false;
+                
+                //creating variables that stores the inputs for Step1
+                inputname = document.contactform.customertxtbx.value;
+                inputemail = document.contactform.emailtxtbx.value;
+                
+               
+                if ((inputname !="") && (isNaN(inputname))) namechk = true;
+                if ((inputemail !="") && (isNaN(inputemail))) emailchk = true;
+                
+                step1chk = (namechk) && (emailchk);
+                
+                
+                
+                
+                //Total form validation
+                formchk = step1chk;
+                
+                if (formchk == true) alert ("Your form is correct");
+                else
+                {
+                    alert ("Your form is not correct");
+                
+                    if (step1chk == false)
+                    {
+                        if (namechk == false) alert ("Please enter a valid name");
+                        if (emailchk == false) alert ("Please enter a valid email address");
+                    }
+                    
+                }    
+            }
+        </script>
+
+</head>
+<body>
+<title>JOSHLAFAZAN.ORG | A FRESH VOICE FOR THE 21ST CENTURY</title>
+<div class="container">
+<div class="header"><a href="http://www.joshlafazan.org"><img style="background-color: #2b547e; display: block;" id="Insert_logo" name="Insert_logo" alt="Insert Logo Here" src="../lafazanbannertwo.jpg" height="260" width="100%" /></a> <!-- end .header --></div>
+<div id="navmenu">
+<ul id="navmenu">
+<li><a href="bio.html">About Josh</a></li>
+<li><a href="platform.html">Platform</a></li>
+<li><a href="http://joshlafazan.blogspot.com/">Blog</a></li>
+<li><a href="reform.html">Education Reform</a></li>
+<li><a href="videos.html">Videos</a></li>
+<li><a href="media.html">In The Media</a></li>
+<li><a href="contribution.html">Make a Contribution</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+<div class="content">
+<div id="wrapper"><left>
+<h1>Contact</h1>
+<p>Please leave your name, e-mail address, questions and/or comments you may have and they will personally be sent to Josh Lafazan. Please no spammers.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<center><form name="contactform" method="post" action="contactform.php">
+<table width="450px">
+<tbody>
+<tr>
+<td valign="top"><label for="first_name">First Name *</label></td>
+<td valign="top"><input name="first_name" maxlength="50" size="30" style="width: 100%;" type="text" /></td>
+</tr>
+<tr>
+<td valign="top"><label for="email">Email Address *</label></td>
+<td valign="top"><input name="email" maxlength="80" size="30" style="width: 100%;" type="text" /></td>
+</tr>
+<tr>
+<td valign="top"><label for="comments">Comments *</label></td>
+<td valign="top"><textarea name="comments" maxlength="1000" cols="25" size="100" rows="6" style="width: 100%;"></textarea></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align: center;"><input value="Submit" onclick="processform()" type="submit" /></td>
+</tr>
+</tbody>
+</table>
+</form></center></left></div>
+<!--<center><form id="contactus" method="post"><input name="submitted" id="submitted" value="1" type="hidden" /> <label for="name">Your Full Name*: </label><br /> <input name="name" id="name" maxlength="50" type="text" /><br /> <label for="email">Email Address*:</label><br /> <input name="email" id="email" maxlength="50" type="text" /><br /> <label for="message">Message:</label><br /> <textarea rows="10" cols="50" name="message" id="message"> </textarea></form><input name="Submit" value="Submit" type="submit" /></center>!-->
+<p><!-- end .content --></p>
+</div>
+<div class="footer">
+<p align="left">Copyright &copy; 2011 - 2012 | Paid for by Josh Lafazan | Website by <a style="color: #000;" href="http://shownd.com/theosdesigns">Theo Martin</a></p>
+<!-- end .footer --></div>
+<!-- end .container --></div>
+</div>
+</body>
+</html>
